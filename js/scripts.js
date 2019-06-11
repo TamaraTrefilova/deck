@@ -10,11 +10,6 @@ $(function() {
     items.push(suit);
     console.log(items);
     console.log(cards);
-    $("form")[0].reset();
-  });
-  $("#showList").click(function() {
-    console.log(items);
-    console.log(cards);
     items.forEach(function(item) {
       cards.forEach(function(card) {
         $("#output").append("<li>" + card + item + "</li>");
@@ -22,6 +17,18 @@ $(function() {
       items = [];
       console.log(items);
     });
+    $("form")[0].reset();
   });
+  // $("#showList").click(function() {
+  //   console.log(items);
+  //   console.log(cards);
+  //   items.forEach(function(item) {
+  //     cards.forEach(function(card) {
+  //       $("#output").append("<li>" + card + item + "</li>");
+  //     });
+  //     items = [];
+  //     console.log(items);
+  //   });
+  // });
 
 });
